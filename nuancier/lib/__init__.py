@@ -144,6 +144,7 @@ def add_election(session, election_name, election_folder, election_year,
     session.add(election)
     return election
 
+
 def edit_election(session, election, election_name, election_folder,
                   election_year, election_date_start, election_date_end,
                   election_n_choice, election_badge_link=None):
@@ -163,7 +164,7 @@ def edit_election(session, election, election_name, election_folder,
     if election.election_name != election_name:
         election.election_name = election_name
         edited.append('election name')
-    
+
     if election.election_folder != election_folder:
         election.election_folder = election_folder
         edited.append('election folder')
