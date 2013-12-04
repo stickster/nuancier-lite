@@ -88,4 +88,3 @@ class AddCandidateForm(flask_wtf.Form):
 
         self.candidate_author.data = flask.g.fas_user.username
         self.candidate_license.data = 'CC-BY-SA'
-    
