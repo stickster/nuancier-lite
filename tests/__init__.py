@@ -230,7 +230,7 @@ def create_candidates(session):
         election_id=3,
     )
     session.add(candidate)
-    
+
     session.commit()
 
 
