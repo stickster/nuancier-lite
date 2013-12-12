@@ -238,7 +238,7 @@ class NuancierLibtests(Modeltests):
             election_n_choice=42,
             election_badge_link='http://badges.fp.o/1234',
         )
-        
+
         self.assertEqual(new_election.election_name, 'elec name')
         self.assertEqual(new_election.election_folder, 'Test')
         self.assertEqual(new_election.election_year, 2048)
@@ -338,7 +338,6 @@ class NuancierLibtests(Modeltests):
         self.assertEqual(3, stats['voters'])
         self.assertEqual([[1, 1], [2, 2]], stats['data'])
 
-    
 
 if __name__ == '__main__':
     SUITE = unittest.TestLoader().loadTestsFromTestCase(NuancierLibtests)
